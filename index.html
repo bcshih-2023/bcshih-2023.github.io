@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title> 我的網頁 | (Welcome to Bao-Cheng Shih website on Amazon S3!) </title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: #8bdaed;  /* 設定背景顏色 */
+      }
+    </style>
+    <script>
+      function showTime() {
+        var date = new Date(); // 取得現在時間
+        var hours = date.getHours(); // 取得小時
+        var minutes = date.getMinutes(); // 取得分鐘
+        var seconds = date.getSeconds(); // 取得秒數
+        var time = hours + ":" + minutes + ":" + seconds; // 組合時間字串
+        document.getElementById("time").innerHTML = time; // 在網頁中顯示時間
+      }
+      setInterval(showTime, 1000); // 每秒執行一次showTime函數
+    </script>
+
+    <script>
+      function showDateTime() {
+        var now = new Date();
+        var date = now.toLocaleDateString();
+        var time = now.toLocaleTimeString();
+        document.getElementById("datetime").innerHTML = date + " " + time;
+      }
+      window.onload = showDateTime; // 載入網頁時執行 showDateTime 函數
+    </script>
+</head>
+<body>
+  <h1>現在的日期時間：<span id="datetime" style="color: #9609f4;"></span> (臺北時間) </h1></p><hr>
+  <h1><b><p style="text-align: center; font-size: 1em;"> 我的網頁 </b></p></h1>
+  <hr>
+  <meta charset="utf-8">
+  <h1> 亞洲大學 (Asia University, Taiwan) | 地址 : 臺中市霧峰區柳豐路 500 號 | 電話 : +886 (04) 23323456</h1>
+  <h1> 就讀學校 : 亞洲大學 資訊工程學系 大學部 </h1>
+  <h1> 班級 : 資工系 三年級 </h1>
+  <h1> 學號 : 109021373 </h1>
+  <h1> 姓名 : 施保丞 (Bao-Cheng Shih) </h1>
+  <span>
+    <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;"><h1><b> 聯絡方式 : </b></h1></font>
+        <a href = "mailto:109021373@live.asia.edu.tw" target = "_blank">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;"><h1> 109021373@live.asia.edu.tw </h1></font>
+        </a>
+  </span> 
+  <!-- 之後我在放其他的照片 -->
+  <img src="myphoto.jpg" with="50" heigh="50" >
+  <hr>
+  <br/>
+  <hr>
+  <h1><a href = "https://docs.google.com/spreadsheets/d/1wnNyzp8Cs_IzVLXHAwsX2mFkx0rRL6J_yPe3_kXjzZI/edit#gid=0"> 111-2 雲端運算 - 期中專題 | 【AWS 期中專題學生資料 】</a></h1>
+  <hr>
+  <h2><a href = "page2.html"> Page2 : 介紹 【亞洲大學 】</a> (Asia University, Taiwan) </h2>
+  <br/>
+  <img src="asia.jpg" with="300" heigh="200" >
+  <br/>
+  <br/>
+  <br/>
+  <h1><a href = "https://www.asia.edu.tw"> 亞洲大學 網站 </a></h1>
+  <br/>
+  <hr>
+  <h2><a href = "page3.html"> Page3 : 介紹 【亞洲大學 資訊工程學系】 </a></h2>
+  <img src="asia_csie.jpg" with="300" heigh="200" >
+  <br/>
+  <br/>
+  <br/>
+    <h1><a href = "https://csie.asia.edu.tw"> 亞洲大學 資訊工程學系 </a></h1>
+  <br/>
+  <hr>
+  <h1> 【推薦影片 : (統神端火鍋) !】</h1>
+  <video src = "video_MP4.mp4" controls width = "1100" > 瀏覽器無法載入影片 </video>
+  <br/>
+  <br/>
+  <hr>
+  <!-- <h1> Email : 109021373@live.asia.edu.tw </h1> -->
+  
+  <!-- Copyright | 版權 -->
+  <style>
+    body {
+      background-image: url("background.jpg");
+      background-size: cover;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    main {
+      margin: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+
+    #visitorCount {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 24px;
+    }
+  </style>
+
+  <main>
+    <button onclick="topFunction()" id="myBtn">頂部</button>
+    <div id="visitorCount"></div>
+  </main>
+
+  <script>
+    // 回到頂部的按鈕
+    var mybutton = document.getElementById("myBtn");
+
+    // 當用戶滾動到頁面的某一位置時，顯示或隱藏按鈕
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // 按下按鈕後，回到頂部
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // 訪客計數器
+    var count = localStorage.getItem("visitorCount") || 0;
+    count++;
+    localStorage.setItem("visitorCount", count);
+
+    document.getElementById("visitorCount").innerHTML = "歡迎光臨 您是自 2023 年 3 月以來 第 " + count + " 位訪客。";
+  </script>
+  <h4><div class="text-center p-2 pt-3" style="font-size: 1.3em; background-color: rgba(0, 0, 0, 0.2);">
+    <h2> @ 2023 網頁維護人 : 109021373 施保丞 (Bao-Cheng Shih) </h2>
+    <h2> © 2023 Copyright : 施保丞 </h2>
+    <!-- <h2><p style="text-align: center; font-size: 1em;">
+        歡迎光臨 您是自 2023 年 3 月以來 第  <font style="color: #ee750b">1</font> 位 參觀本站的訪客 <br/> -->
+            <h2><p style="text-align: center; font-size: 1em;"> 現在時間：<span id="time" style="color: #e7083c"></span></h2></p> <!-- 顯示現在時間 -->
+        </span>
+    </h2></p>
+  </h4></div>
+</body>
+</html>

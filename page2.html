@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <herd>
+        <meta charset="utf-8"></meta>
+        <title> 介紹 | 亞洲大學 </title>
+        <style>
+            body {
+              background-color: #bfed8b;  /* 設定背景顏色 */
+            }
+          </style>
+        <script>
+            function showTime() {
+              var date = new Date(); // 取得現在時間
+              var hours = date.getHours(); // 取得小時
+              var minutes = date.getMinutes(); // 取得分鐘
+              var seconds = date.getSeconds(); // 取得秒數
+              var time = hours + ":" + minutes + ":" + seconds; // 組合時間字串
+              document.getElementById("time").innerHTML = time; // 在網頁中顯示時間
+            }
+            setInterval(showTime, 1000); // 每秒執行一次showTime函數
+          </script>
+          <script text="text/javascript">
+            // 初始訪客數為 0
+            var visitorCount = 0;
+        
+            // 網頁載入完成時執行
+            window.onload = function() {
+                
+            // 取得儲存的訪客數
+            var storedCount = localStorage.getItem('visitorCount');
+            if (storedCount) {
+                visitorCount = parseInt(storedCount);
+            }
+        
+            // 更新訪客數顯示
+            document.getElementById('visitor-count').innerHTML = visitorCount;
+            }
+        
+            // 每次訪問網頁時執行
+            function incrementVisitorCount() {
+            // 更新訪客數
+            visitorCount++;
+            // 儲存訪客數
+            localStorage.setItem('visitorCount', visitorCount);
+            // 更新訪客數顯示
+            document.getElementById('visitor-count').innerHTML = visitorCount;
+            }
+          </script>
+    </herd>
+    <body>
+        <h1> 第二頁 | page2 </h1>
+        <hr>
+        <img src = "https://upload.wikimedia.org/wikipedia/zh/b/bc/Tw_Asia_University_logo.jpg" width = "200" height = "200" />
+        <h1><a href = "https://www.asia.edu.tw"> 亞洲大學 網站 </a></h1>
+        <h1> 亞洲大學 (Asia University, Taiwan) </h1>
+        <h1>地址 : 臺中市霧峰區柳豐路500號</1h1>
+        <h1>電話 : +886 (04) 23323456</h1>
+    <br/>
+    <hr>
+    <br/>
+    <h1><p style="text-align: center; font-size: 1em;">【亞大簡介】</h1></p>
+        <h1> <p class="page-title-text" style="margin: 2em 1em;"> 校徽的中心「綠十字」代表本校「醫學暨健康學院」及「護理學院」，培養醫學、護理、 健康之專業人才，營造全面的健康生活。<br>
+            金黃色的「光碟」代表「資訊電機學院」，有效落實本校「科際整合、資源共享」之辦 學理念，培育高級資訊管理人才。<br>
+            藍色的「盾牌」代表「管理學院」，本校以追求創新、發展優勢、專精教學為教育理念， 培養具備如盾牌般強韌創新思維與專業知識的優良學子。<br>
+            金黃色的「羽毛筆」代表「人文社會學院」，本校以人文素養的永續基石，希冀培育知 能並進、學用合一，及身、心、靈健全發展之優秀專業人才。<br>
+            藍色的「桂冠葉」代表「創意設計學院」，桂冠葉在古希臘羅馬時代具有榮耀勝利的意思， 本校將以培育國家和社會發展所需之文化創意產業設計專業人才為目標，為台灣的競爭 力注入新血，帶來榮耀勝利。<br>
+            山牆、廊柱、鐘樓代表本校最具特色的典雅校園規劃，以希臘圓柱、羅馬方柱、山牆等 建築為主軸，以營造經年長綠、四季有花的花園大學為願景。</p> </h1>
+            <hr>
+            <h4 align="center" class="item-title" style="font-size: 1.8em;"> 【校訓】 </h4>
+        <h2><section class="fourth-text-wrapper">
+            <div class="fourth-text-left">
+            <span style="color: #f4901e; font-size: 1.5em">健康</span><br>
+            具有促進身體、心理與靈性健康的良好習慣</div>
+            
+            <div class="fourth-text-center">
+            <span style="color: #734c23; font-size: 1.5em">關懷</span><br>
+            具有關懷自己、關懷他人、關懷社會及關懷世界的行動力</div>
+            
+            <div class="fourth-text-center">
+            <span style="color: #007c36; font-size: 1.5em">創新</span><br>
+            具有創造特色的原創力與求新、求變及應變的能力</div>
+            
+            <div class="fourth-text-right">
+            <span style="color: #be272e; font-size: 1.5em">卓越</span><br>
+            具有追求自我突破，並能終身學習與不斷因應社會變遷的企圖心</div>
+        </h2></section>
+
+        <hr>
+        <h4 align="center" class="item-title" style="font-size: 1.8em; margin-right: 1.2em"> 【校史】 </h4>
+        <h2><p class="people-div-text" style="margin: 2em 2em 4em 0.625em;"> 1996年蔡創辦人長海教授抱持醫療工作者與學者的恢宏器識，深感教育為國家永續發展不可或缺之基石，希冀能為台灣這塊土地多付出一份心力，乃協同另一創辦人林增連先生暨全體董事慨然捐資，1997年選定台中縣霧峰鄉(現為台中市霧峰區)為建校地點，1999年10月成立設校籌備處，而於2001年3月順利獲准創設「臺中健康暨管理學院」，並於2005年8月1日獲准改名「亞洲大學」。 </h2></p>
+        <h1><p style="text-align: center; margin-right: 2em;"><a class="page-button" href="/zh_tw/about/synopsis/history" style="color: #F60; text-decoration: none;" target="_top" title="亞大校史頁面"> 校史 | 觀看更多 </a></h1></p>
+        <hr>
+        <h4 align="center" class="item-title" style="font-size: 1.8em; margin-right: 1.2em"> 【教育目標】 </h4>
+        <h2><p class="people-div-text" style="margin: 2em 2em 4em 0.625em;"> 培育兼具專業與人文素養以及良好品格態度，並能追求與實踐健康、關懷、創新及卓越價值之世界公民 </h2></p>
+
+
+        <hr>
+        <h4 align="center" class="item-title" style="font-size: 1.8em; margin-right: 1.2em"> 【校歌】 </h4>
+        <h2><p class="people-div-text" style="margin: 2em 2em 4em 0.625em;"> 本校校歌是由知名演奏家蔡介誠譜曲，並由蔡長海創辦人親自填詞，於民國90年創校起即採用。內容由本校所在地出發，闡述本校創校理念，期許邁向國際一流的綜合性大學。 </h2></p>
+        <h1><p style="text-align: center; margin-right: 2em;"><a class="page-button" href="https://www.youtube.com/watch?v=3MGWyxAFNDw" style="color: #F60; text-decoration: none;" target="_blank" title="Youtube觀看亞洲大學校歌影片"> 校歌影片 | 觀看更多 </a></h1></p>
+        <hr>
+
+        <h4 align="center" class="item-title" style="font-size: 1.8em; margin-right: 1em"> 【歷任校長】 </h4>
+
+        <h2><p class="people-div-text" style="margin: 2em 2em 4em 0.625em;"> 萬丈高樓並非一日而起，其雄偉輝煌都是透過一磚一瓦的累積而成。 <br>
+        而歷任校長的一絲不茍，為亞大奠定了良好根基，正是造就亞洲大學現有輝煌的最大推手。 </h2></p>
+
+        <h1><p style="text-align: center; margin-right: 2em;"><a class="page-button" href="/zh_tw/about/synopsis/past_president" style="color: #F60; text-decoration: none;" target="_top" title="歷任校長介紹頁面"> 歷任校長 | 觀看更多 </a></h1></p>
+        <hr>
+        <h4 align="center" class="item-title" style="font-size: 1.8em; margin-right: 1em"> 【亞洲大學 | 影片介紹】 </h4>
+        <iframe width="1150" height="600" src="https://www.youtube.com/embed/-XMzPqJf9uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr>
+        <h2><a href = "page3.html"> 到 Page3 : 介紹 【亞洲大學 資訊工程學系】 </a></h2>
+        <h1><a href = "index.html"> 回首頁 : 我的網站 </a></h1><br/>
+        <hr>
+        <style>
+            body {
+              background-image: url("background.jpg");
+              background-size: cover;
+              color: #000000;
+              font-family: Arial, sans-serif;
+              font-size: 18px;
+              margin: 0;
+              padding: 0;
+            }
+            
+            header {
+              background-color: #333;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+            }
+            
+            h1 {
+              margin: 0;
+            }
+            
+            main {
+              margin: 20px;
+            }
+            
+            #myBtn {
+              display: none;
+              position: fixed;
+              bottom: 20px;
+              right: 30px;
+              z-index: 99;
+              font-size: 18px;
+              border: none;
+              outline: none;
+              background-color: #333;
+              color: white;
+              cursor: pointer;
+              padding: 15px;
+              border-radius: 10px;
+            }
+        
+            #myBtn:hover {
+              background-color: #555;
+            }
+        
+            #visitorCount {
+              text-align: center;
+              margin-top: 50px;
+              font-size: 24px;
+            }
+          </style>
+      
+          <main>
+            <button onclick="topFunction()" id="myBtn">頂部</button>
+            <div id="visitorCount"></div>
+          </main>
+        
+          <script>
+            // 回到頂部的按鈕
+            var mybutton = document.getElementById("myBtn");
+        
+            // 當用戶滾動到頁面的某一位置時，顯示或隱藏按鈕
+            window.onscroll = function() {scrollFunction()};
+        
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+        
+            // 按下按鈕後，回到頂部
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        
+            // 訪客計數器
+            var count = localStorage.getItem("visitorCount") || 0;
+            count++;
+            localStorage.setItem("visitorCount", count);
+        
+            document.getElementById("visitorCount").innerHTML = "歡迎光臨 您是自 2023 年 3 月以來 第 " + count + " 位訪客。";
+          </script>
+        <h2><p style="text-align: center; font-size: 1em;">@2023 網頁維護人 : 109021373 施保丞</h2></p>
+        <h2><p style="text-align: center; font-size: 1em;">© 2023 Copyright : 施保丞 </h2></p>
+         <!-- <h2><p style="text-align: center; font-size: 1em;">
+                歡迎光臨 您是自 2023 年 4 月以來 第  <font style="color: #ee750b">N</font> 位 參觀本站的訪客<br/>
+            <body onload="incrementVisitorCount()">
+                <p>歡迎光臨 您是自 2023 年 4 月以來 第 <span id="visitor-count" style="color: #895e38"></span> 個參觀本站的訪客 </p>
+            </body>-->
+        <h2><p style="text-align: center; font-size: 1em;"> 現在時間：<span id="time" style="color: #e7083c"></span></h2></p> <!-- 顯示現在時間 -->
+        </span>
+        </h2></p>
+    </body>
+</html>
